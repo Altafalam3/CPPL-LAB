@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html>
 <body>
+
 <h2>JavaScript Regular Expressions</h2>
 <p>Do a global search for digits in a string:</p>
 <p id="demo"></p>
+
 <script>
-let text = "passw56ard10!"; 
+let text = "passw56ard10!";
+//this will match all numbers
 let result = text.match(/\d+/g);
+
 document.getElementById("demo").innerHTML = result;
+
 </script>
 </body>
 </html>

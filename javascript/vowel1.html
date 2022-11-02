@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!-- not working  -->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Vowel Count</title>
+    </head>
+    <body>
+        <h4>Input String </h2>
+
+            <input type='text' name='text1' id="text1">
+            <input type="submit" name="submit" value="Submit" onclick="CheckVowel()" >
+
+
+        <script>
+        function CheckVowel(){
+            let str = document.getElementById('text1').innerHTML;
+            let check = str.match(/[aeiou]/gi);
+            let count = check.length;
+
+            alert("Count of vowels is :" + count);
+        }
+        </script>
+    </body>
+</html>

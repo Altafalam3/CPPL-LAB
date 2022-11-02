@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+   <h2>JavaScript Regular Expressions</h2>
+   <p>Do a global search for any of the specified alternatives for two symbol (!|@):</p>
+   <p id="demo"></p>
+   <script>
+      let text = "se@iT!@";
+      let result = text.match(/[!@]/gi);  //text.match(/(!|@)/g); i not reqd here
+
+      //if its not empty it will be outputed in @,!,@ format
+      if (result) {
+         document.getElementById("demo").innerHTML = result;
+      }
+      else {
+         document.getElementById("demo").innerHTML = "invalid";
+      }
+
+   </script>
+</body>
+
+</html>
+
+<!-- i Perform case-insensitive matching
+g Perform a global match
+m Perform multiline matching -->
+
+<!-- for searching digit(single digit eg 2,3,4) in string
+text.match(/\d/g); -->
+
+<!-- for searching multidigit(eg 45,2424) in string
+text.match(/\d+/g); -->

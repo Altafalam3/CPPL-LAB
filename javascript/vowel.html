@@ -1,0 +1,35 @@
+<html>
+
+<head lang="en">
+  <meta charset="utf-8">
+  <title>Vowel Count</title>
+</head>
+
+<body>
+
+  <!-- <h4>Count of vowel is : <span id="total"></span> </h4> -->
+
+  <script>
+    function countVowel(str) {
+      // find all the vowels which match it gives a array
+      let check = str.match(/[aeiou]/gi);
+      //array length for count of vowels
+      let count = check.length;
+
+      return count;
+    }
+
+    // take input
+    let string = prompt('Enter a string: ');
+
+    //call function with string
+    let result = countVowel(string);
+
+    alert("Count of vowels is :" + result);
+
+    //document.getElementById("total").innerHTML = result;
+
+  </script>
+
+</body>
+</html>

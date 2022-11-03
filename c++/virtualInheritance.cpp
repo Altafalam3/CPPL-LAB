@@ -1,5 +1,5 @@
 // virtual inheritance ensuring single occurance of l in square
-//if virtual is not written , it creates ambiguity for l
+// if virtual is not written , it creates ambiguity for l
 
 #include <iostream>
 using namespace std;
@@ -26,7 +26,7 @@ public:
       l = x;
       b = y;
    }
-   void show() { cout << "The length and breadth of rectange are " << l << " and " << b<< endl; }
+   void show() { cout << "The length and breadth of rectange are " << l << " and " << b << endl; }
 };
 
 class rombus : virtual public twod

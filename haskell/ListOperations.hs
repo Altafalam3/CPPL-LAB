@@ -20,5 +20,6 @@ main = do
       ain<-getLine
       let a=(read ain :: Int)
 
+      --Here pikachu is name of list
       let pikachu=[p,i,k,a]
       print(double pikachu)

@@ -7,7 +7,7 @@ main =do
       print (scores !! 0)
       --output in same format square brack
       print(scores)
-      
+
       -- score at head index
       print (head scores)
       -- score at last index
